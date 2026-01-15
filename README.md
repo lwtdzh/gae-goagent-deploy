@@ -5,6 +5,8 @@
 
 原始代码来源及使用说明（来自 XX-Net 的 GAE 部署部分）：https://github.com/XX-net/XX-Net/wiki/GAE_Module
 
+=======
+
 前置条件：
 1.
 已申请 app id
@@ -17,6 +19,7 @@ https://console.cloud.google.com/cloud-build/settings/service-account
 3.
 IAM 管理中已授予 Storage Admin 权限
 
+=======
 
 执行步骤：
 1.
@@ -35,3 +38,10 @@ cd 到这个项目的根目录
 执行 gcloud app deploy
 例如：xxx/google-cloud-sdk/bin/gcloud app deploy
 
+=======
+
+检查部署结果：
+1.
+用已经翻墙的浏览器，访问 https://$appid.appspot.com 看到
+GoAgent 服务端已经升级到 python3 版本。
+Version: 4.0.0
